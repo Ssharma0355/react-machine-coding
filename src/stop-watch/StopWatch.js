@@ -14,6 +14,9 @@ const StopWatch = () => {
             <button>
                 Reset
             </button>
+            <button>
+                Reset
+            </button>
         </div>
     </div>
   )
