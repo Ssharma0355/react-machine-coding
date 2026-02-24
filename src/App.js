@@ -4,6 +4,7 @@ import TrfficLight from './traffic-light-nobroker/TrfficLight';
 import StopWatch from './stop-watch/StopWatch';
 import AutoSearch from './auto-search/AutoSearch';
 import ParentFetch from './reusable-table/ParentFetch';
+import TodoList from './todo-list/TodoList';
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       {/* <TrfficLight />
       <StopWatch /> */}
       {/* <AutoSearch /> */}
-      <ParentFetch />
+      {/* <ParentFetch /> */}
+      <TodoList />
     
     </div>
   );
