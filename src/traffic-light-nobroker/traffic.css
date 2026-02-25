@@ -1,0 +1,10 @@
+.traffic-box{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 200px;
+    background-color: gray;
+}
+.lights{
+    border-radius: 12px;
+}
