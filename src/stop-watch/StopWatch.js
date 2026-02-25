@@ -16,7 +16,6 @@ const StopWatch = () => {
             </button>
             <button>
                 Reset
-                resrt
             </button>
         </div>
     </div>
