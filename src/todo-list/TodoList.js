@@ -4,33 +4,33 @@ const TodoList = () => {
     const [input, setInput] = useState("");
     const [todo, setTodo] = useState([]);
 
-    const handleTodo =(e)=>{
-        e.preventDefault()
-        const list={
-            id:todo.length+1,
+    const addTask=()=>{
+        if(!input) return;
+        const list ={
+            id:Date.now(),
             value:input,
-            status:false
+            status:false,
         }
-        setTodo(prev =>[...prev,list])
+        setTodo(prev => [...prev,list]);
         setInput("")
     }
+
     const deleteTask=(id)=>{
-        const filterItem = todo.filter(todo => todo.id === id);
-        // setTodo(prev =>[...prev,filterItem])
-       
+        const filterItem = todo.filter((item)=> id !== item.id)
+        setTodo(filterItem)
     }
-console.table(todo)
+
   return (
     <div>
-        <input type='text' value={input} onChange={(e)=>setInput(e.target.value)} />
-        <button onClick={handleTodo}>Add</button>
-      <div>
-            {todo.map((list,id)=>(
-                <li key={id}>{list.value}
-                <button onClick={deleteTask(list.id)}>Delete</button>
-                </li>
-            ))}
-      </div>
+        <input type='text' value={input} onChange={(e)=>setInput(e.target.value)}/>
+        <button onClick={addTask}>Add Task</button>
+        <>
+        {todo.map((t)=>(
+            <li key={t.id}>{t.value}
+            <button onClick={()=>deleteTask(t.id)}>Delete</button>
+            </li>
+        ))}
+        </>
     </div>
   )
 }
