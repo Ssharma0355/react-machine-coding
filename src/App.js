@@ -6,6 +6,7 @@ import AutoSearch from './auto-search/AutoSearch';
 import ParentFetch from './reusable-table/ParentFetch';
 import TodoList from './todo-list/TodoList';
 import ParentConfig from './traffic-light-nobroker/ParentConfig';
+import ParentProgress from './progressbar/ParentProgress';
 
 function App() {
   return (
@@ -15,7 +16,11 @@ function App() {
       {/* <TodoList /> */}
     
        {/* Traffic Light  */}
-       <ParentConfig />
+       {/* <ParentConfig /> */}
+
+
+       {/* PROGRESSBAR  */}
+       <ParentProgress />
     </div>
   );
 }

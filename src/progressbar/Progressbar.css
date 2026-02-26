@@ -1,0 +1,11 @@
+.progress-outer{
+    /* width: 500px; */
+    border-radius: 12px;
+    border: 1px solid black;
+    overflow: hidden;
+    margin: 200px;
+}
+.progress-inner{
+     color: white;
+     background-color: green;
+}
