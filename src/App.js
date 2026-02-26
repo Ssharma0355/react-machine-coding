@@ -15,7 +15,7 @@ function App() {
       {/* <TodoList /> */}
     
        {/* Traffic Light  */}
-       <ParentConfig />
+       {/* <ParentConfig /> */}
     </div>
   );
 }
