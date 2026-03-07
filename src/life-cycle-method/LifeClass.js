@@ -1,7 +1,9 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import CounterLife from './CounterLife';
 
 export default class LifeClass extends Component {
-
+ 
+    // constructor is also a lifecycle method to hold value before render
     constructor(){
         super();
 
@@ -12,9 +14,9 @@ export default class LifeClass extends Component {
     componentDidMount(){
         console.log("Component did mount it render 1st time after component gets rendered")
     }
-    componentDidUpdate(){
-        console.log("State is updated")
-    }
+    // componentDidUpdate(){
+    //     console.log("State is updated")
+    // }
     componentWillUnmount(){
         console.log("Component Did Unmount")
     }
@@ -22,10 +24,11 @@ export default class LifeClass extends Component {
     increment(){
         this.setState({count: this.state.count+1})
     }
+    // render is also an lifecycle method to interpret the JSX 
   render() {
     return (
       <div>
-        <h1>{this.state.count}</h1>
+        <CounterLife number={this.state.count} />
         <button onClick={()=>this.increment()}>Increment</button>
       </div>
     )
