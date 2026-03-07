@@ -24,7 +24,7 @@ function App() {
        {/* <ParentProgress /> */}
 
        {/* Life Cycle Method  */}
-       {/* <LifeClass /> */}
+       <LifeClass />
     </div>
   );
 }
