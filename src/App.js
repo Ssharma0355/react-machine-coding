@@ -7,6 +7,7 @@ import ParentFetch from './reusable-table/ParentFetch';
 import TodoList from './todo-list/TodoList';
 import ParentConfig from './traffic-light-nobroker/ParentConfig';
 import ParentProgress from './progressbar/ParentProgress';
+import LifeClass from './life-cycle-method/LifeClass';
 
 function App() {
   return (
@@ -20,7 +21,10 @@ function App() {
 
 
        {/* PROGRESSBAR  */}
-       <ParentProgress />
+       {/* <ParentProgress /> */}
+
+       {/* Life Cycle Method  */}
+       {/* <LifeClass /> */}
     </div>
   );
 }
