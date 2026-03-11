@@ -9,6 +9,7 @@ import ParentConfig from './traffic-light-nobroker/ParentConfig';
 import ParentProgress from './progressbar/ParentProgress';
 import LifeClass from './life-cycle-method/LifeClass';
 import DropDowns from './dynamic-dropdown/DropDowns';
+import Search from './debounce/Search';
 
 function App() {
   return (
@@ -28,7 +29,10 @@ function App() {
        {/* <LifeClass /> */}
      
        {/* Dynamic DropDown Interview */}
-       <DropDowns />
+       {/* <DropDowns /> */}
+
+       {/* Debounce  */}
+       <Search />
     </div>
   );
 }
