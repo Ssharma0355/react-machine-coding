@@ -20,6 +20,8 @@ const Search = () => {
         }
     },[value])
     console.table(result);
+    console.table(result);
+
 
   return (
     <div>
