@@ -22,6 +22,8 @@ const Search = () => {
     console.table(result);
     console.table(result);
     console.table(result);
+    console.table(result);
+
 
 
 
