@@ -13,6 +13,7 @@ import Search from './debounce/Search';
 import StateIssue from './kubeinter/StateIssue';
 import EffectIssue from './kubeinter/EffectIssue';
 import DebuundPrac from './kubeinter/DebuundPrac';
+import BrokenApi from './kubeinter/BrokenApi';
 
 function App() {
   return (
@@ -38,7 +39,8 @@ function App() {
        {/* <Search /> */}
        {/* <StateIssue /> */}
        {/* <EffectIssue /> */}
-       <DebuundPrac />
+       {/* <DebuundPrac /> */}
+       <BrokenApi />
     </div>
   );
 }
