@@ -11,6 +11,7 @@ import LifeClass from './life-cycle-method/LifeClass';
 import DropDowns from './dynamic-dropdown/DropDowns';
 import Search from './debounce/Search';
 import StateIssue from './kubeinter/StateIssue';
+import EffectIssue from './kubeinter/EffectIssue';
 
 function App() {
   return (
@@ -34,7 +35,8 @@ function App() {
 
        {/* Debounce  */}
        {/* <Search /> */}
-       <StateIssue />
+       {/* <StateIssue /> */}
+       <EffectIssue />
     </div>
   );
 }
