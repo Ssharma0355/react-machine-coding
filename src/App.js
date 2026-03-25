@@ -10,6 +10,7 @@ import ParentProgress from './progressbar/ParentProgress';
 import LifeClass from './life-cycle-method/LifeClass';
 import DropDowns from './dynamic-dropdown/DropDowns';
 import Search from './debounce/Search';
+import StateIssue from './kubeinter/StateIssue';
 
 function App() {
   return (
@@ -32,7 +33,8 @@ function App() {
        {/* <DropDowns /> */}
 
        {/* Debounce  */}
-       <Search />
+       {/* <Search /> */}
+       <StateIssue />
     </div>
   );
 }
