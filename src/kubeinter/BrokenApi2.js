@@ -1,10 +1,13 @@
 import React, { useEffect, useMemo, useState } from 'react'
+import UserModal from './UserModal';
 
 const BrokenApi2 = () => {
     const [users, setUsers] = useState([]);
     const [search, setSearch] = useState("");
     const [error, setError] = useState("");
-    const [isLoading, setisLoading] = useState(true)
+    const [isLoading, setisLoading] = useState(true);
+    const [selectedUser, setSelectedUser] = useState([]);
+    const [openModal, setOpenModal] = useState(false);
 
     const getData = async () =>{
         try{
@@ -35,6 +38,14 @@ const BrokenApi2 = () => {
 
     },[users, search]) 
 
+    const handleModal =(user)=>{
+        setSelectedUser(prev => user);
+        console.log(user)
+        setOpenModal(true)
+    }
+    
+    console.log(selectedUser)
+
 
     if(isLoading === true) return <p>Loading.. Please Wait</p>
 
@@ -42,12 +53,14 @@ const BrokenApi2 = () => {
     <div>
         <div>
             <input type='text' value={search} onChange={(e)=>setSearch(e.target.value)}/>
-            {filteredValue.map(u => (
-                <li key={u.id}>{u.name}</li>
+            {filteredValue.map(user => (
+                <li key={user.id} onClick={()=>handleModal(user)}>{user.name}</li>
             ))}
 
         </div>
-        {users.length >0 
+        <UserModal openModal={openModal} closeModal={()=>setOpenModal(false)} user={selectedUser} />
+
+        {/* {users.length >0 
         ?
         <>
         {users.map(u =>(
@@ -56,7 +69,7 @@ const BrokenApi2 = () => {
         </>
         :
         <p>No Data Found</p>
-    }
+    } */}
     </div>
   )
 }
