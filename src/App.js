@@ -17,6 +17,11 @@ import BrokenApi from './kubeinter/BrokenApi';
 import BrokenApi2 from './kubeinter/BrokenApi2';
 import Task from './kubeinter/Task';
 import ProductSearch from './kubeinter/ProductSearch';
+import FeedbackForm from './kubeinter/FeedbackForm';
+import AutoLogoutTimer from './kubeinter/AutoLogoutTimer';
+import TimerCount from './kubeinter/TimerCount';
+import UserList from './kubeinter/UserList';
+import ProductDashboard from './kubeinter/ProductDashboard';
 
 function App() {
   return (
@@ -47,7 +52,12 @@ function App() {
        {/* <BrokenApi2 /> */}
        {/* <Task /> */}
 
-       <ProductSearch />
+       {/* <ProductSearch /> */}
+       {/* <FeedbackForm /> */}
+       {/* <AutoLogoutTimer />
+       <TimerCount /> */}
+       {/* <UserList /> */}
+       <ProductDashboard />
     </div>
   );
 }
