@@ -14,6 +14,9 @@ import StateIssue from './kubeinter/StateIssue';
 import EffectIssue from './kubeinter/EffectIssue';
 import DebuundPrac from './kubeinter/DebuundPrac';
 import BrokenApi from './kubeinter/BrokenApi';
+import BrokenApi2 from './kubeinter/BrokenApi2';
+import Task from './kubeinter/Task';
+import ProductSearch from './kubeinter/ProductSearch';
 
 function App() {
   return (
@@ -40,7 +43,11 @@ function App() {
        {/* <StateIssue /> */}
        {/* <EffectIssue /> */}
        {/* <DebuundPrac /> */}
-       <BrokenApi />
+       {/* <BrokenApi /> */}
+       {/* <BrokenApi2 /> */}
+       {/* <Task /> */}
+
+       <ProductSearch />
     </div>
   );
 }

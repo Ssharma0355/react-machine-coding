@@ -1,4 +1,4 @@
-import React, { use, useEffect, useState } from 'react'
+import React, { use, useEffect, useMemo, useState } from 'react'
 
 const BrokenApi = () => {
     const API = "https://jsonplaceholder.typicode.com/users";
@@ -24,7 +24,11 @@ const BrokenApi = () => {
         }
         getData();
     },[])
-    const filteredValue = userData.filter( u => u.name.toLowerCase().includes(search.toLowerCase()))
+    // const filteredValue = userData.filter( u => u.name.toLowerCase().includes(search.toLowerCase()))
+    // memoizing
+    const filteredValue = useMemo(()=>{
+       return userData.filter( u => u.name.toLowerCase().includes(search.toLowerCase()))
+    },[userData, search])
     console.log(filteredValue)
     if(loading) return <p>Loading</p>
 
