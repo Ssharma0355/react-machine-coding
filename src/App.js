@@ -21,7 +21,11 @@ import FeedbackForm from './kubeinter/FeedbackForm';
 import AutoLogoutTimer from './kubeinter/AutoLogoutTimer';
 import TimerCount from './kubeinter/TimerCount';
 import UserList from './kubeinter/UserList';
-import ProductDashboard from './kubeinter/ProductDashboard';
+// import ProductDashboard from './kubeinter/ProductDashboard';
+import Parentcon from "./kubeinter/parentcon"
+
+import { lazy, Suspense } from 'react';
+const ProductDashboard = lazy(()=> import("./kubeinter/ProductDashboard"))
 
 function App() {
   return (
@@ -57,7 +61,11 @@ function App() {
        {/* <AutoLogoutTimer />
        <TimerCount /> */}
        {/* <UserList /> */}
+       <Suspense fallback={<p>Loading</p>}>
        <ProductDashboard />
+       </Suspense>
+
+       <Parentcon />
     </div>
   );
 }
