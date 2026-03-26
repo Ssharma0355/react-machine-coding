@@ -16,6 +16,7 @@ import DebuundPrac from './kubeinter/DebuundPrac';
 import BrokenApi from './kubeinter/BrokenApi';
 import BrokenApi2 from './kubeinter/BrokenApi2';
 import Task from './kubeinter/Task';
+import ProductSearch from './kubeinter/ProductSearch';
 
 function App() {
   return (
@@ -44,7 +45,9 @@ function App() {
        {/* <DebuundPrac /> */}
        {/* <BrokenApi /> */}
        {/* <BrokenApi2 /> */}
-       <Task />
+       {/* <Task /> */}
+
+       <ProductSearch />
     </div>
   );
 }
