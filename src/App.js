@@ -25,6 +25,7 @@ import UserList from './kubeinter/UserList';
 import Parentcon from "./kubeinter/parentcon"
 
 import { lazy, Suspense } from 'react';
+import SampleX from './kubeinter/SampleX';
 const ProductDashboard = lazy(()=> import("./kubeinter/ProductDashboard"))
 
 function App() {
@@ -61,11 +62,12 @@ function App() {
        {/* <AutoLogoutTimer />
        <TimerCount /> */}
        {/* <UserList /> */}
-       <Suspense fallback={<p>Loading</p>}>
+       {/* <Suspense fallback={<p>Loading</p>}>
        <ProductDashboard />
        </Suspense>
 
-       <Parentcon />
+       <Parentcon /> */}
+       <SampleX />
     </div>
   );
 }
