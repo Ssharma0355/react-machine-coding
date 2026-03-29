@@ -12,21 +12,11 @@ const SampleX = () => {
         const items = {id:Date.now(), name:"sach", qty:1}
         setitems(prev => [...prev, items])
     }
-    // const addQt = (id)=>{
-    //     setitems(prev=>{
-    //         prev.map(item=>
-    //             item.id === id
-    //             ? {...item, qty: item.qty+1}
-    //             : item
-    //         )
-    //         })
-    //     }
 
     const addQt =(id)=>{
         setitems(prev =>
             prev.map(item =>
               item.id === id ? {...item, qty: item.qty+1} : item
-            
             )
             )
     }
@@ -37,6 +27,7 @@ const SampleX = () => {
        {items.map(i=>(
         <li key={i.id}>{i.name} Quatitiy {i.qty} <button onClick={()=>addQt(i.id)}>Add Quantity</button></li>
        ))}
+       <input />
       
     </div>
   )
