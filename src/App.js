@@ -26,6 +26,7 @@ import Parentcon from "./kubeinter/parentcon"
 
 import { lazy, Suspense } from 'react';
 import SampleX from './kubeinter/SampleX';
+import Effect from './megthink/Effect';
 const ProductDashboard = lazy(()=> import("./kubeinter/ProductDashboard"))
 
 function App() {
@@ -67,7 +68,8 @@ function App() {
        </Suspense>
 
        <Parentcon /> */}
-       <SampleX />
+       {/* <SampleX /> */}
+       <Effect />
     </div>
   );
 }
