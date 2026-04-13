@@ -29,6 +29,8 @@ import SampleX from './kubeinter/SampleX';
 import Effect from './megthink/Effect';
 import CRUD from './megthink/CRUD';
 import AddUser from './megthink/AddUser';
+import ParentCall from './megthink/Calls/ParentCall';
+import Bounce from './megthink/Bounce';
 const ProductDashboard = lazy(()=> import("./kubeinter/ProductDashboard"))
 
 function App() {
@@ -72,8 +74,10 @@ function App() {
        <Parentcon /> */}
        {/* <SampleX /> */}
        {/* <Effect /> */}
-       <CRUD />
-       <AddUser />
+       {/* <CRUD />
+       <AddUser /> */}
+       {/* <ParentCall /> */}
+       <Bounce />
     </div>
   );
 }
