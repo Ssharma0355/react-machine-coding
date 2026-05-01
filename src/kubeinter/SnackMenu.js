@@ -36,10 +36,7 @@ export default function SnackMenu() {
         <strong>Cart Items: {cart.length}</strong>
         <button onClick={handleClearCart} style={{ marginLeft: '10px' }}>
           Clear Cart
-        </button>
-        <button onClick={handleClearCart} style={{ marginLeft: '10px' }}>
-          Clear Cart
-        </button>
+        </button> 
       </div>
 
       <div>
