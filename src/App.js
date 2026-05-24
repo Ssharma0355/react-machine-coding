@@ -32,6 +32,7 @@ import AddUser from './megthink/AddUser';
 import ParentCall from './megthink/Calls/ParentCall';
 import Bounce from './megthink/Bounce';
 import MainTab from './tabform/MainTab';
+import LightConfig from './traffic-light-nobroker/re-practice/LightConfig';
 const ProductDashboard = lazy(()=> import("./kubeinter/ProductDashboard"))
 
 function App() {
@@ -79,7 +80,8 @@ function App() {
        <AddUser /> */}
        {/* <ParentCall /> */}
        {/* <Bounce /> */}
-       <MainTab />
+       {/* <MainTab /> */}
+       <LightConfig />
     </div>
   );
 }
