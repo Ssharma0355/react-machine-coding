@@ -31,6 +31,7 @@ import CRUD from './megthink/CRUD';
 import AddUser from './megthink/AddUser';
 import ParentCall from './megthink/Calls/ParentCall';
 import Bounce from './megthink/Bounce';
+import MainTab from './tabform/MainTab';
 const ProductDashboard = lazy(()=> import("./kubeinter/ProductDashboard"))
 
 function App() {
@@ -77,7 +78,8 @@ function App() {
        {/* <CRUD />
        <AddUser /> */}
        {/* <ParentCall /> */}
-       <Bounce />
+       {/* <Bounce /> */}
+       <MainTab />
     </div>
   );
 }
