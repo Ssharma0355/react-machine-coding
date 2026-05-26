@@ -34,6 +34,7 @@ import Bounce from './megthink/Bounce';
 import MainTab from './tabform/MainTab';
 import LightConfig from './traffic-light-nobroker/re-practice/LightConfig';
 import Pagination from './Pagination/Pagination';
+import Page from './Pagination/Practice/Page';
 const ProductDashboard = lazy(()=> import("./kubeinter/ProductDashboard"))
 
 function App() {
@@ -83,7 +84,8 @@ function App() {
        {/* <Bounce /> */}
        {/* <MainTab /> */}
        {/* <LightConfig /> */}
-       <Pagination />
+       {/* <Pagination /> */}
+       <Page />
     </div>
   );
 }
