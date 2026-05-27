@@ -35,6 +35,8 @@ import MainTab from './tabform/MainTab';
 import LightConfig from './traffic-light-nobroker/re-practice/LightConfig';
 import Pagination from './Pagination/Pagination';
 import Page from './Pagination/Practice/Page';
+import SearchFilter from './search-filter/SearchFilter';
+import Config from './prctice/Config';
 const ProductDashboard = lazy(()=> import("./kubeinter/ProductDashboard"))
 
 function App() {
@@ -85,7 +87,9 @@ function App() {
        {/* <MainTab /> */}
        {/* <LightConfig /> */}
        {/* <Pagination /> */}
-       <Page />
+       {/* <Page /> */}
+       {/* <SearchFilter /> */}
+       <Config />
     </div>
   );
 }
