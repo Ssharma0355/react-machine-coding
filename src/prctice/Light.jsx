@@ -8,7 +8,7 @@ function Light({lightCongif}) {
     useEffect(()=>{
     const Timer = setTimeout(()=>{
         setIndex((prev)=>(prev+1)%lightCongif.length)
-    },CurrentColor.CurrentColor)
+    },CurrentColor.duration)
 
         return()=>{
             clearTimeout(Timer)
@@ -17,10 +17,10 @@ function Light({lightCongif}) {
   return (
     <div>
    {lightCongif.map((t, index)=>(
-    <div key={index}>{t.color}</div>
+    <div key={index} style={{border:"1px solid black", height:"20px", width:"20px", margin:"4px",borderRadius:"100%",
+    backgroundColor:`${CurrentColor.id === t.id ? t.color:""}`
+}}></div>
    ))}
-
-      
     </div>
   )
 }
