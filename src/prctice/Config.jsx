@@ -23,6 +23,8 @@ function Config() {
     <div>
         <Light lightCongif={lightCongif} />
         <Light lightCongif={lightCongif} />
+        <Light lightCongif={lightCongif} />
+
 
       
     </div>
