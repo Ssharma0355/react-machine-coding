@@ -37,6 +37,7 @@ import Pagination from './Pagination/Pagination';
 import Page from './Pagination/Practice/Page';
 import SearchFilter from './search-filter/SearchFilter';
 import Config from './prctice/Config';
+import Delu from './delu/Delu';
 const ProductDashboard = lazy(()=> import("./kubeinter/ProductDashboard"))
 
 function App() {
@@ -89,7 +90,8 @@ function App() {
        {/* <Pagination /> */}
        {/* <Page /> */}
        {/* <SearchFilter /> */}
-       <Config />
+       {/* <Config /> */}
+       <Delu />
     </div>
   );
 }
