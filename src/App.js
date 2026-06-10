@@ -38,11 +38,12 @@ import Page from './Pagination/Practice/Page';
 import SearchFilter from './search-filter/SearchFilter';
 import Config from './prctice/Config';
 import Delu from './delu/Delu';
+import ParentForm from './Tab-Form/ParentForm';
 const ProductDashboard = lazy(()=> import("./kubeinter/ProductDashboard"))
 
 function App() {
   return (
-    <div className="App">
+    <div >
       {/* <AutoSearch /> */}
       {/* <ParentFetch /> */}
       {/* <TodoList /> */}
@@ -91,7 +92,8 @@ function App() {
        {/* <Page /> */}
        {/* <SearchFilter /> */}
        {/* <Config /> */}
-       <Delu />
+       {/* <Delu /> */}
+       <ParentForm />
     </div>
   );
 }
