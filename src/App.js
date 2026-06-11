@@ -39,6 +39,7 @@ import SearchFilter from './search-filter/SearchFilter';
 import Config from './prctice/Config';
 import Delu from './delu/Delu';
 import ParentForm from './Tab-Form/ParentForm';
+import SearchAgain from './debounce/SearchAgain';
 const ProductDashboard = lazy(()=> import("./kubeinter/ProductDashboard"))
 
 function App() {
@@ -93,7 +94,8 @@ function App() {
        {/* <SearchFilter /> */}
        {/* <Config /> */}
        {/* <Delu /> */}
-       <ParentForm />
+       {/* <ParentForm /> */}
+       <SearchAgain />
     </div>
   );
 }
