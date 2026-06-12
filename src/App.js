@@ -40,6 +40,7 @@ import Config from './prctice/Config';
 import Delu from './delu/Delu';
 import ParentForm from './Tab-Form/ParentForm';
 import SearchAgain from './debounce/SearchAgain';
+import Pagei from './Pagination/Practice2/Pagei';
 const ProductDashboard = lazy(()=> import("./kubeinter/ProductDashboard"))
 
 function App() {
@@ -95,7 +96,8 @@ function App() {
        {/* <Config /> */}
        {/* <Delu /> */}
        {/* <ParentForm /> */}
-       <SearchAgain />
+       {/* <SearchAgain /> */}
+       <Pagei />
     </div>
   );
 }
