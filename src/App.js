@@ -41,6 +41,8 @@ import Delu from './delu/Delu';
 import ParentForm from './Tab-Form/ParentForm';
 import SearchAgain from './debounce/SearchAgain';
 import Pagei from './Pagination/Practice2/Pagei';
+import Board from './tic-tac-toe/Board';
+import MainBoard from './tic-tac-toe/tic-practice/MainBoard';
 const ProductDashboard = lazy(()=> import("./kubeinter/ProductDashboard"))
 
 function App() {
@@ -97,7 +99,9 @@ function App() {
        {/* <Delu /> */}
        {/* <ParentForm /> */}
        {/* <SearchAgain /> */}
-       <Pagei />
+       {/* <Pagei /> */}
+       {/* <Board /> */}
+       <MainBoard />
     </div>
   );
 }
