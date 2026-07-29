@@ -43,6 +43,9 @@ import SearchAgain from './debounce/SearchAgain';
 import Pagei from './Pagination/Practice2/Pagei';
 import Board from './tic-tac-toe/Board';
 import MainBoard from './tic-tac-toe/tic-practice/MainBoard';
+import Pagnigation from './page/Pagnigation';
+import Deal from './practicexp/Deal';
+import InfinteScroll from './InfintieScroll/InfinteScroll';
 const ProductDashboard = lazy(()=> import("./kubeinter/ProductDashboard"))
 
 function App() {
@@ -101,7 +104,10 @@ function App() {
        {/* <SearchAgain /> */}
        {/* <Pagei /> */}
        {/* <Board /> */}
-       <MainBoard />
+       {/* <MainBoard /> */}
+       {/* <Pagnigation /> */}
+       {/* <Deal /> */}
+       <InfinteScroll />
     </div>
   );
 }
