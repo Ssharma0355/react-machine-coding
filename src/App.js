@@ -46,6 +46,7 @@ import MainBoard from './tic-tac-toe/tic-practice/MainBoard';
 import Pagnigation from './page/Pagnigation';
 import Deal from './practicexp/Deal';
 import InfinteScroll from './InfintieScroll/InfinteScroll';
+import Carousel from './carousel/Carousel';
 const ProductDashboard = lazy(()=> import("./kubeinter/ProductDashboard"))
 
 function App() {
@@ -107,7 +108,8 @@ function App() {
        {/* <MainBoard /> */}
        {/* <Pagnigation /> */}
        {/* <Deal /> */}
-       <InfinteScroll />
+       {/* <InfinteScroll /> */}
+       <Carousel />
     </div>
   );
 }
